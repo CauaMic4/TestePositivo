@@ -4,59 +4,59 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Listagem de Alunos e Endereços</h1>
-    <br />
+<h1>Home</h1>
 
-    <h2>Alunos</h2>
-    <table class="table">
-        <thead>
+<h2>Alunos</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nome Completo</th>
+            <th>Data de Nascimento</th>
+            <th>Série</th>
+            <th>Segmento</th>
+            <th>Nome do Pai</th>
+            <th>Nome da Mãe</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var aluno in Model.Alunos)
+        {
             <tr>
-                <th>Nome Completo</th>
-                <th>Data de Nascimento</th>
-                <th>Série</th>
-                <th>Segmento</th>
-                <th>Nome do Pai</th>
-                <th>Nome da Mãe</th>
+                <td>@aluno.NomeCompleto</td>
+                <td>@aluno.DataNascimento.ToShortDateString()</td>
+                <td>@aluno.Serie</td>
+                <td>@aluno.Segmento</td>
+                <td>@aluno.NomePai</td>
+                <td>@aluno.NomeMae</td>
             </tr>
-        </thead>
-        <tbody>
-            @foreach (var aluno in Model.Alunos)
-            {
-                <tr>
-                    <td>@aluno.NomeCompleto</td>
-                    <td>@aluno.DataNascimento.ToShortDateString()</td>
-                    <td>@aluno.Serie</td>
-                    <td>@aluno.Segmento</td>
-                    <td>@aluno.NomePai</td>
-                    <td>@aluno.NomeMae</td>
-                </tr>
-            }
-        </tbody>
-    </table>
+        }
+    </tbody>
+</table>
 
-    <h2>Endereços</h2>
-    <table class="table">
-        <thead>
+<h2>Endereços</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Aluno</th>
+            <th>Tipo</th>
+            <th>Rua</th>
+            <th>CEP</th>
+            <th>Número</th>
+            <th>Complemento</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var endereco in Model.Enderecos)
+        {
             <tr>
-                <th>Tipo</th>
-                <th>Rua</th>
-                <th>CEP</th>
-                <th>Número</th>
-                <th>Complemento</th>
+                <td>@(endereco.Aluno?.NomeCompleto ?? "Desconhecido")</td>
+                <td>@endereco.Tipo</td>
+                <td>@endereco.Rua</td>
+                <td>@endereco.CEP</td>
+                <td>@endereco.Numero</td>
+                <td>@endereco.Complemento</td>
             </tr>
-        </thead>
-        <tbody>
-            @foreach (var endereco in Model.Enderecos)
-            {
-                <tr>
-                    <td>@endereco.Tipo</td>
-                    <td>@endereco.Rua</td>
-                    <td>@endereco.CEP</td>
-                    <td>@endereco.Numero</td>
-                    <td>@endereco.Complemento</td>
-                </tr>
-            }
-        </tbody>
-    </table>
-</div>
+        }
+    </tbody>
+</table>
+

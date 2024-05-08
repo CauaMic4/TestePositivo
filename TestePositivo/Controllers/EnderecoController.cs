@@ -45,15 +45,17 @@ namespace TestePositivo.Controllers
         // GET: Endereco/Create
         public IActionResult Create()
         {
+            ViewData["AlunoModelId"] = new SelectList(_context.AlunoModel.OrderBy(a => a.NomeCompleto), "Id", "NomeCompleto");
             return View();
         }
+
 
         // POST: Endereco/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Tipo,Rua,CEP,Numero,Complemento")] EnderecoModel enderecoModel)
+        public async Task<IActionResult> Create([Bind("Id,Tipo,Rua,CEP,Numero,Complemento,AlunoModelId")] EnderecoModel enderecoModel)
         {
             if (ModelState.IsValid)
             {
@@ -61,8 +63,14 @@ namespace TestePositivo.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            else
+            {
+                Console.WriteLine("");
+            }
+            ViewData["AlunoModelId"] = new SelectList(_context.AlunoModel.OrderBy(a => a.NomeCompleto), "Id", "NomeCompleto", enderecoModel.AlunoModelId);
             return View(enderecoModel);
         }
+
 
         // GET: Endereco/Edit/5
         public async Task<IActionResult> Edit(int? id)

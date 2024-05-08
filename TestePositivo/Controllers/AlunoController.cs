@@ -21,8 +21,12 @@ namespace TestePositivo.Controllers
         // GET: Aluno
         public async Task<IActionResult> Index()
         {
-            return View(await _context.AlunoModel.ToListAsync());
+            var alunos = await _context.AlunoModel.ToListAsync();
+
+            return View(alunos);
         }
+
+
 
         // GET: Aluno/Details/5
         public async Task<IActionResult> Details(int? id)
