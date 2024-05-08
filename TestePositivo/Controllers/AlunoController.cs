@@ -18,6 +18,44 @@ namespace TestePositivo.Controllers
             _context = context;
         }
 
+        private int CalculateAge(DateTime birthDate)
+        {
+            var today = DateTime.Today;
+            var age = today.Year - birthDate.Year;
+            if (birthDate.Date > today.AddYears(-age)) age--;
+            return age;
+        }
+
+        private (string Serie, string Segmento) DetermineSerieAndSegmento(int age)
+        {
+            string serie = null;
+            string segmento = null;
+
+            if (age >= 3 && age <= 5)
+            {
+                serie = $"G{age - 2}";
+                segmento = "Infantil";
+            }
+            else if (age >= 6 && age <= 10)
+            {
+                serie = $"{age - 5}º ano";
+                segmento = "Anos iniciais";
+            }
+            else if (age >= 11 && age <= 14)
+            {
+                serie = $"{age - 5}º ano";
+                segmento = "Anos finais";
+            }
+            else if (age >= 15 && age <= 17)
+            {
+                serie = $"{age - 14}º ano ensino médio";
+                segmento = "Ensino Médio";
+            }
+
+            return (serie, segmento);
+        }
+
+
         // GET: Aluno
         public async Task<IActionResult> Index()
         {
@@ -57,16 +95,24 @@ namespace TestePositivo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,NomeCompleto,DataNascimento,Serie,Segmento,NomePai,NomeMae")] AlunoModel alunoModel)
+        public async Task<IActionResult> Create([Bind("Id,NomeCompleto,DataNascimento,NomePai,NomeMae")] AlunoModel alunoModel)
         {
+            ModelState.Remove("Serie");
+            ModelState.Remove("Segmento");
             if (ModelState.IsValid)
             {
+                var age = CalculateAge(alunoModel.DataNascimento);
+                (string serie, string segmento) = DetermineSerieAndSegmento(age);
+                alunoModel.Serie = serie;
+                alunoModel.Segmento = segmento;
+
                 _context.Add(alunoModel);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
             return View(alunoModel);
         }
+
 
         // GET: Aluno/Edit/5
         public async Task<IActionResult> Edit(int? id)
@@ -89,7 +135,7 @@ namespace TestePositivo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,NomeCompleto,DataNascimento,Serie,Segmento,NomePai,NomeMae")] AlunoModel alunoModel)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,NomeCompleto,DataNascimento,NomePai,NomeMae")] AlunoModel alunoModel)
         {
             if (id != alunoModel.Id)
             {
@@ -98,6 +144,11 @@ namespace TestePositivo.Controllers
 
             if (ModelState.IsValid)
             {
+                var age = CalculateAge(alunoModel.DataNascimento);
+                (string serie, string segmento) = DetermineSerieAndSegmento(age);
+                alunoModel.Serie = serie;
+                alunoModel.Segmento = segmento;
+
                 try
                 {
                     _context.Update(alunoModel);

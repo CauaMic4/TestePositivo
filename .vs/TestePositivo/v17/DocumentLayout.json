@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "E:\\Estudo\\Projetos\\TestePositivo\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{71AA5E3E-BED3-4757-BB39-43C2C1CBCCB9}|TestePositivo\\TestePositivo.csproj|e:\\estudo\\projetos\\testepositivo\\testepositivo\\controllers\\alunocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71AA5E3E-BED3-4757-BB39-43C2C1CBCCB9}|TestePositivo\\TestePositivo.csproj|solutionrelative:testepositivo\\controllers\\alunocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{71AA5E3E-BED3-4757-BB39-43C2C1CBCCB9}|TestePositivo\\TestePositivo.csproj|e:\\estudo\\projetos\\testepositivo\\testepositivo\\controllers\\enderecocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{71AA5E3E-BED3-4757-BB39-43C2C1CBCCB9}|TestePositivo\\TestePositivo.csproj|solutionrelative:testepositivo\\controllers\\enderecocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71AA5E3E-BED3-4757-BB39-43C2C1CBCCB9}|TestePositivo\\TestePositivo.csproj|e:\\estudo\\projetos\\testepositivo\\testepositivo\\models\\alunomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71AA5E3E-BED3-4757-BB39-43C2C1CBCCB9}|TestePositivo\\TestePositivo.csproj|solutionrelative:testepositivo\\models\\alunomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71AA5E3E-BED3-4757-BB39-43C2C1CBCCB9}|TestePositivo\\TestePositivo.csproj|e:\\estudo\\projetos\\testepositivo\\testepositivo\\views\\aluno\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{71AA5E3E-BED3-4757-BB39-43C2C1CBCCB9}|TestePositivo\\TestePositivo.csproj|solutionrelative:testepositivo\\views\\aluno\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71AA5E3E-BED3-4757-BB39-43C2C1CBCCB9}|TestePositivo\\TestePositivo.csproj|e:\\estudo\\projetos\\testepositivo\\testepositivo\\views\\aluno\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{71AA5E3E-BED3-4757-BB39-43C2C1CBCCB9}|TestePositivo\\TestePositivo.csproj|solutionrelative:testepositivo\\views\\aluno\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,15 +46,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "EnderecoController.cs",
               "DocumentMoniker": "E:\\Estudo\\Projetos\\TestePositivo\\TestePositivo\\Controllers\\EnderecoController.cs",
               "RelativeDocumentMoniker": "TestePositivo\\Controllers\\EnderecoController.cs",
               "ToolTip": "E:\\Estudo\\Projetos\\TestePositivo\\TestePositivo\\Controllers\\EnderecoController.cs",
               "RelativeToolTip": "TestePositivo\\Controllers\\EnderecoController.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAqwEMAAAANAAAA",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAAAD4AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T15:52:40.646Z",
+              "WhenOpened": "2024-05-08T16:18:00.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "E:\\Estudo\\Projetos\\TestePositivo\\TestePositivo\\Views\\Aluno\\Edit.cshtml",
+              "RelativeDocumentMoniker": "TestePositivo\\Views\\Aluno\\Edit.cshtml",
+              "ToolTip": "E:\\Estudo\\Projetos\\TestePositivo\\TestePositivo\\Views\\Aluno\\Edit.cshtml",
+              "RelativeToolTip": "TestePositivo\\Views\\Aluno\\Edit.cshtml",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAACIAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-08T16:13:11.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "E:\\Estudo\\Projetos\\TestePositivo\\TestePositivo\\Views\\Aluno\\Create.cshtml",
+              "RelativeDocumentMoniker": "TestePositivo\\Views\\Aluno\\Create.cshtml",
+              "ToolTip": "E:\\Estudo\\Projetos\\TestePositivo\\TestePositivo\\Views\\Aluno\\Create.cshtml",
+              "RelativeToolTip": "TestePositivo\\Views\\Aluno\\Create.cshtml",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAABMAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-08T16:08:44.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AlunoModel.cs",
+              "DocumentMoniker": "E:\\Estudo\\Projetos\\TestePositivo\\TestePositivo\\Models\\AlunoModel.cs",
+              "RelativeDocumentMoniker": "TestePositivo\\Models\\AlunoModel.cs",
+              "ToolTip": "E:\\Estudo\\Projetos\\TestePositivo\\TestePositivo\\Models\\AlunoModel.cs",
+              "RelativeToolTip": "TestePositivo\\Models\\AlunoModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T16:08:33.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AlunoController.cs",
+              "DocumentMoniker": "E:\\Estudo\\Projetos\\TestePositivo\\TestePositivo\\Controllers\\AlunoController.cs",
+              "RelativeDocumentMoniker": "TestePositivo\\Controllers\\AlunoController.cs",
+              "ToolTip": "E:\\Estudo\\Projetos\\TestePositivo\\TestePositivo\\Controllers\\AlunoController.cs",
+              "RelativeToolTip": "TestePositivo\\Controllers\\AlunoController.cs",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAAAFoAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T16:02:33.837Z",
               "EditorCaption": ""
             }
           ]
