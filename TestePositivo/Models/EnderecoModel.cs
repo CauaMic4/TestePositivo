@@ -6,8 +6,6 @@ namespace TestePositivo.Models
     public class EnderecoModel
     {
         public int Id { get; set; }
-        public int AlunoModelId { get; set; }
-        public virtual AlunoModel Aluno { get; set; }
         public string Tipo { get; set; }
         public string Rua { get; set; }
         public string CEP { get; set; }

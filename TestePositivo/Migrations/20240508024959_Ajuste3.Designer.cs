@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace TestePositivo.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240507225613_FirstMigration")]
-    partial class FirstMigration
+    [Migration("20240508024959_Ajuste3")]
+    partial class Ajuste3
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

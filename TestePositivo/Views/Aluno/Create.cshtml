@@ -42,6 +42,35 @@
                 <input asp-for="NomeMae" class="form-control" />
                 <span asp-validation-for="NomeMae" class="text-danger"></span>
             </div>
+
+            <!-- Adicionando campos de endereço -->
+            @* <h4>Endereço</h4>
+            <div class="form-group">
+                <label asp-for="Endereco.Tipo" class="control-label"></label>
+                <input asp-for="Endereco.Tipo" class="form-control" />
+                <span asp-validation-for="Endereco.Tipo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Endereco.Rua" class="control-label"></label>
+                <input asp-for="Endereco.Rua" class="form-control" />
+                <span asp-validation-for="Endereco.Rua" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Endereco.CEP" class="control-label"></label>
+                <input asp-for="Endereco.CEP" class="form-control" />
+                <span asp-validation-for="Endereco.CEP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Endereco.Numero" class="control-label"></label>
+                <input asp-for="Endereco.Numero" class="form-control" />
+                <span asp-validation-for="Endereco.Numero" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Endereco.Complemento" class="control-label"></label>
+                <input asp-for="Endereco.Complemento" class="form-control" />
+                <span asp-validation-for="Endereco.Complemento" class="text-danger"></span>
+            </div> *@
+
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
@@ -54,5 +83,7 @@
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

@@ -250,3 +250,4 @@ E:\Estudo\Projetos\TestePositivo\TestePositivo\obj\Debug\net8.0\refint\TestePosi
 E:\Estudo\Projetos\TestePositivo\TestePositivo\obj\Debug\net8.0\TestePositivo.pdb
 E:\Estudo\Projetos\TestePositivo\TestePositivo\obj\Debug\net8.0\TestePositivo.genruntimeconfig.cache
 E:\Estudo\Projetos\TestePositivo\TestePositivo\obj\Debug\net8.0\ref\TestePositivo.dll
+E:\Estudo\Projetos\TestePositivo\TestePositivo\obj\Debug\net8.0\TestePositivo.sourcelink.json

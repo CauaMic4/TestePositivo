@@ -15,6 +15,5 @@ namespace TestePositivo.Models
         public string Segmento { get; set; }
         public string NomePai { get; set; }
         public string NomeMae { get; set; }
-        public virtual ICollection<EnderecoModel> Endereco { get; set; }
     }
 }
