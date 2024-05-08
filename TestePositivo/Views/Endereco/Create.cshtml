@@ -1,12 +1,12 @@
 ﻿@model TestePositivo.Models.EnderecoModel
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Criação";
 }
 
-<h1>Create</h1>
+<h1>Criação de Endereços</h1>
+<span>Lembre-se de criar o Aluno Antes</span>
 
-<h4>EnderecoModel</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -37,16 +37,18 @@
                 <input asp-for="Complemento" class="form-control" />
                 <span asp-validation-for="Complemento" class="text-danger"></span>
             </div>
+
             <div class="form-group">
-                <label asp-for="AlunoModelId" class="control-label"></label>
-                <select asp-for="AlunoModelId" class="form-control" asp-items="ViewBag.AlunoModelId" required>
-                    <option value="">-- Selecione o Aluno --</option>
+                <label asp-for="AlunoModelId" class="control-label">Selecione o aluno</label>
+                <select asp-for="AlunoModelId" class="form-control" asp-items="@ViewBag.AlunoModelId">
+                    <option value="">-- Selecionar Aluno --</option>
                 </select>
                 <span asp-validation-for="AlunoModelId" class="text-danger"></span>
             </div>
 
 
 
+             
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
@@ -55,9 +57,11 @@
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Voltar para a lista</a>
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

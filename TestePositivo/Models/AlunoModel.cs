@@ -6,6 +6,7 @@ namespace TestePositivo.Models
     [Table("Aluno")]
     public class AlunoModel
     {
+        [Key]
         public int Id { get; set; }
         public string NomeCompleto { get; set; }
 

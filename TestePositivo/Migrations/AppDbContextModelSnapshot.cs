@@ -65,7 +65,7 @@ namespace TestePositivo.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int?>("AlunoModelId")
+                    b.Property<int>("AlunoModelId")
                         .HasColumnType("int");
 
                     b.Property<string>("CEP")
@@ -98,7 +98,9 @@ namespace TestePositivo.Migrations
                 {
                     b.HasOne("TestePositivo.Models.AlunoModel", "Aluno")
                         .WithMany("Enderecos")
-                        .HasForeignKey("AlunoModelId");
+                        .HasForeignKey("AlunoModelId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Aluno");
                 });

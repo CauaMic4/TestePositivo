@@ -5,34 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{71AA5E3E-BED3-4757-BB39-43C2C1CBCCB9}|TestePositivo\\TestePositivo.csproj|e:\\estudo\\projetos\\testepositivo\\testepositivo\\controllers\\enderecocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{71AA5E3E-BED3-4757-BB39-43C2C1CBCCB9}|TestePositivo\\TestePositivo.csproj|solutionrelative:testepositivo\\controllers\\enderecocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71AA5E3E-BED3-4757-BB39-43C2C1CBCCB9}|TestePositivo\\TestePositivo.csproj|e:\\estudo\\projetos\\testepositivo\\testepositivo\\controllers\\alunocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71AA5E3E-BED3-4757-BB39-43C2C1CBCCB9}|TestePositivo\\TestePositivo.csproj|solutionrelative:testepositivo\\controllers\\alunocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71AA5E3E-BED3-4757-BB39-43C2C1CBCCB9}|TestePositivo\\TestePositivo.csproj|e:\\estudo\\projetos\\testepositivo\\testepositivo\\views\\endereco\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{71AA5E3E-BED3-4757-BB39-43C2C1CBCCB9}|TestePositivo\\TestePositivo.csproj|solutionrelative:testepositivo\\views\\endereco\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71AA5E3E-BED3-4757-BB39-43C2C1CBCCB9}|TestePositivo\\TestePositivo.csproj|e:\\estudo\\projetos\\testepositivo\\testepositivo\\models\\enderecomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71AA5E3E-BED3-4757-BB39-43C2C1CBCCB9}|TestePositivo\\TestePositivo.csproj|solutionrelative:testepositivo\\models\\enderecomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71AA5E3E-BED3-4757-BB39-43C2C1CBCCB9}|TestePositivo\\TestePositivo.csproj|e:\\estudo\\projetos\\testepositivo\\testepositivo\\views\\aluno\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{71AA5E3E-BED3-4757-BB39-43C2C1CBCCB9}|TestePositivo\\TestePositivo.csproj|solutionrelative:testepositivo\\views\\aluno\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71AA5E3E-BED3-4757-BB39-43C2C1CBCCB9}|TestePositivo\\TestePositivo.csproj|e:\\estudo\\projetos\\testepositivo\\testepositivo\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71AA5E3E-BED3-4757-BB39-43C2C1CBCCB9}|TestePositivo\\TestePositivo.csproj|solutionrelative:testepositivo\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71AA5E3E-BED3-4757-BB39-43C2C1CBCCB9}|TestePositivo\\TestePositivo.csproj|e:\\estudo\\projetos\\testepositivo\\testepositivo\\models\\alunomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71AA5E3E-BED3-4757-BB39-43C2C1CBCCB9}|TestePositivo\\TestePositivo.csproj|solutionrelative:testepositivo\\models\\alunomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71AA5E3E-BED3-4757-BB39-43C2C1CBCCB9}|TestePositivo\\TestePositivo.csproj|e:\\estudo\\projetos\\testepositivo\\testepositivo\\models\\homemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71AA5E3E-BED3-4757-BB39-43C2C1CBCCB9}|TestePositivo\\TestePositivo.csproj|solutionrelative:testepositivo\\models\\homemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,106 +30,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "E:\\Estudo\\Projetos\\TestePositivo\\TestePositivo\\Views\\Endereco\\Create.cshtml",
-              "RelativeDocumentMoniker": "TestePositivo\\Views\\Endereco\\Create.cshtml",
-              "ToolTip": "E:\\Estudo\\Projetos\\TestePositivo\\TestePositivo\\Views\\Endereco\\Create.cshtml",
-              "RelativeToolTip": "TestePositivo\\Views\\Endereco\\Create.cshtml",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAuwC0AAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-08T03:41:54.933Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\Estudo\\Projetos\\TestePositivo\\TestePositivo\\Views\\Aluno\\Index.cshtml",
-              "RelativeDocumentMoniker": "TestePositivo\\Views\\Aluno\\Index.cshtml",
-              "ToolTip": "E:\\Estudo\\Projetos\\TestePositivo\\TestePositivo\\Views\\Aluno\\Index.cshtml",
-              "RelativeToolTip": "TestePositivo\\Views\\Aluno\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-08T03:31:00.174Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "HomeModel.cs",
-              "DocumentMoniker": "E:\\Estudo\\Projetos\\TestePositivo\\TestePositivo\\Models\\HomeModel.cs",
-              "RelativeDocumentMoniker": "TestePositivo\\Models\\HomeModel.cs",
-              "ToolTip": "E:\\Estudo\\Projetos\\TestePositivo\\TestePositivo\\Models\\HomeModel.cs",
-              "RelativeToolTip": "TestePositivo\\Models\\HomeModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T02:26:21.216Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "E:\\Estudo\\Projetos\\TestePositivo\\TestePositivo\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "TestePositivo\\Controllers\\HomeController.cs",
-              "ToolTip": "E:\\Estudo\\Projetos\\TestePositivo\\TestePositivo\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "TestePositivo\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T02:24:29.121Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AlunoModel.cs",
-              "DocumentMoniker": "E:\\Estudo\\Projetos\\TestePositivo\\TestePositivo\\Models\\AlunoModel.cs",
-              "RelativeDocumentMoniker": "TestePositivo\\Models\\AlunoModel.cs",
-              "ToolTip": "E:\\Estudo\\Projetos\\TestePositivo\\TestePositivo\\Models\\AlunoModel.cs",
-              "RelativeToolTip": "TestePositivo\\Models\\AlunoModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T02:11:37.541Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EnderecoModel.cs",
-              "DocumentMoniker": "E:\\Estudo\\Projetos\\TestePositivo\\TestePositivo\\Models\\EnderecoModel.cs",
-              "RelativeDocumentMoniker": "TestePositivo\\Models\\EnderecoModel.cs",
-              "ToolTip": "E:\\Estudo\\Projetos\\TestePositivo\\TestePositivo\\Models\\EnderecoModel.cs",
-              "RelativeToolTip": "TestePositivo\\Models\\EnderecoModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T02:11:29.713Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "EnderecoController.cs",
               "DocumentMoniker": "E:\\Estudo\\Projetos\\TestePositivo\\TestePositivo\\Controllers\\EnderecoController.cs",
               "RelativeDocumentMoniker": "TestePositivo\\Controllers\\EnderecoController.cs",
               "ToolTip": "E:\\Estudo\\Projetos\\TestePositivo\\TestePositivo\\Controllers\\EnderecoController.cs",
               "RelativeToolTip": "TestePositivo\\Controllers\\EnderecoController.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAAAC0AAAAlAAAA",
+              "ViewState": "AQIAADwAAAAAAAAAAAAqwEMAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T22:54:56.244Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AlunoController.cs",
-              "DocumentMoniker": "E:\\Estudo\\Projetos\\TestePositivo\\TestePositivo\\Controllers\\AlunoController.cs",
-              "RelativeDocumentMoniker": "TestePositivo\\Controllers\\AlunoController.cs",
-              "ToolTip": "E:\\Estudo\\Projetos\\TestePositivo\\TestePositivo\\Controllers\\AlunoController.cs",
-              "RelativeToolTip": "TestePositivo\\Controllers\\AlunoController.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAiwBgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T02:23:21.153Z",
+              "WhenOpened": "2024-05-08T15:52:40.646Z",
               "EditorCaption": ""
             }
           ]

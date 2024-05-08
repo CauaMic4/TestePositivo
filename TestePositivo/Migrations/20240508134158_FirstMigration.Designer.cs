@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace TestePositivo.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240508024959_Ajuste3")]
-    partial class Ajuste3
+    [Migration("20240508134158_FirstMigration")]
+    partial class FirstMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -68,6 +68,9 @@ namespace TestePositivo.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("AlunoModelId")
+                        .HasColumnType("int");
+
                     b.Property<string>("CEP")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -89,7 +92,25 @@ namespace TestePositivo.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("AlunoModelId");
+
                     b.ToTable("Endereco");
+                });
+
+            modelBuilder.Entity("TestePositivo.Models.EnderecoModel", b =>
+                {
+                    b.HasOne("TestePositivo.Models.AlunoModel", "Aluno")
+                        .WithMany("Enderecos")
+                        .HasForeignKey("AlunoModelId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Aluno");
+                });
+
+            modelBuilder.Entity("TestePositivo.Models.AlunoModel", b =>
+                {
+                    b.Navigation("Enderecos");
                 });
 #pragma warning restore 612, 618
         }

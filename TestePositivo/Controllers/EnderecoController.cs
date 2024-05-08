@@ -21,8 +21,10 @@ namespace TestePositivo.Controllers
         // GET: Endereco
         public async Task<IActionResult> Index()
         {
-            return View(await _context.EnderecoModel.ToListAsync());
+            var enderecoModel = _context.EnderecoModel.Include(e => e.Aluno).ToListAsync();
+            return View(await enderecoModel);
         }
+
 
         // GET: Endereco/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -45,10 +47,10 @@ namespace TestePositivo.Controllers
         // GET: Endereco/Create
         public IActionResult Create()
         {
-            ViewData["AlunoModelId"] = new SelectList(_context.AlunoModel.OrderBy(a => a.NomeCompleto), "Id", "NomeCompleto");
+            ViewBag.AlunoModelId = new SelectList(_context.AlunoModel.OrderBy(a => a.NomeCompleto), "Id", "NomeCompleto");
+
             return View();
         }
-
 
         // POST: Endereco/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
@@ -57,15 +59,12 @@ namespace TestePositivo.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Tipo,Rua,CEP,Numero,Complemento,AlunoModelId")] EnderecoModel enderecoModel)
         {
+            ModelState.Remove("Aluno");
             if (ModelState.IsValid)
             {
                 _context.Add(enderecoModel);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
-            }
-            else
-            {
-                Console.WriteLine("");
             }
             ViewData["AlunoModelId"] = new SelectList(_context.AlunoModel.OrderBy(a => a.NomeCompleto), "Id", "NomeCompleto", enderecoModel.AlunoModelId);
             return View(enderecoModel);

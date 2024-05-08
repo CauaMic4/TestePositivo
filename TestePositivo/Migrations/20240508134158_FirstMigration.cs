@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace TestePositivo.Migrations
 {
     /// <inheritdoc />
-    public partial class Ajuste3 : Migration
+    public partial class FirstMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -39,22 +39,34 @@ namespace TestePositivo.Migrations
                     Rua = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CEP = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Numero = table.Column<int>(type: "int", nullable: false),
-                    Complemento = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Complemento = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    AlunoModelId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Endereco", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Endereco_Aluno_AlunoModelId",
+                        column: x => x.AlunoModelId,
+                        principalTable: "Aluno",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Endereco_AlunoModelId",
+                table: "Endereco",
+                column: "AlunoModelId");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Aluno");
+                name: "Endereco");
 
             migrationBuilder.DropTable(
-                name: "Endereco");
+                name: "Aluno");
         }
     }
 }
