@@ -1,7 +1,7 @@
 ﻿@model TestePositivo.Models.EnderecoModel
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Editar Endereço";
 }
 
 <h1>Editar</h1>
@@ -37,17 +37,17 @@
                 <input asp-for="Complemento" class="form-control" />
                 <span asp-validation-for="Complemento" class="text-danger"></span>
             </div>
-            
+            </br>
+
             <div class="form-group">
                 <input type="submit" value="Salvar" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
-<br />
 
-<div>
-    <a asp-action="Index">Voltar para a lista</a>
+<div class="btnBack">
+    <a class="btn btn-secondary" asp-action="Index">Voltar para lista</a>
 </div>
 
 @section Scripts {

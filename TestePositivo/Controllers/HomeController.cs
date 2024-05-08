@@ -17,7 +17,7 @@ namespace TestePositivo.Controllers
         public async Task<IActionResult> Index()
         {
             var alunos = await _context.AlunoModel.ToListAsync();
-            var enderecos = await _context.EnderecoModel.Include(e => e.Aluno).ToListAsync();  // Incluindo dados de alunos para cada endereço, se necessário
+            var enderecos = await _context.EnderecoModel.Include(e => e.Aluno).ToListAsync();
             var model = new HomeModel
             {
                 Alunos = alunos,

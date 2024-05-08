@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "E:\\Estudo\\Projetos\\TestePositivo\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{71AA5E3E-BED3-4757-BB39-43C2C1CBCCB9}|TestePositivo\\TestePositivo.csproj|e:\\estudo\\projetos\\testepositivo\\testepositivo\\views\\endereco\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{71AA5E3E-BED3-4757-BB39-43C2C1CBCCB9}|TestePositivo\\TestePositivo.csproj|solutionrelative:testepositivo\\views\\endereco\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71AA5E3E-BED3-4757-BB39-43C2C1CBCCB9}|TestePositivo\\TestePositivo.csproj|e:\\estudo\\projetos\\testepositivo\\testepositivo\\views\\aluno\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{71AA5E3E-BED3-4757-BB39-43C2C1CBCCB9}|TestePositivo\\TestePositivo.csproj|solutionrelative:testepositivo\\views\\aluno\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -31,32 +22,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\Estudo\\Projetos\\TestePositivo\\TestePositivo\\Views\\Endereco\\Index.cshtml",
-              "RelativeDocumentMoniker": "TestePositivo\\Views\\Endereco\\Index.cshtml",
-              "ToolTip": "E:\\Estudo\\Projetos\\TestePositivo\\TestePositivo\\Views\\Endereco\\Index.cshtml",
-              "RelativeToolTip": "TestePositivo\\Views\\Endereco\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-08T16:47:14.328Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\Estudo\\Projetos\\TestePositivo\\TestePositivo\\Views\\Aluno\\Index.cshtml",
-              "RelativeDocumentMoniker": "TestePositivo\\Views\\Aluno\\Index.cshtml",
-              "ToolTip": "E:\\Estudo\\Projetos\\TestePositivo\\TestePositivo\\Views\\Aluno\\Index.cshtml",
-              "RelativeToolTip": "TestePositivo\\Views\\Aluno\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-08T16:46:34.828Z",
-              "EditorCaption": ""
             }
           ]
         }

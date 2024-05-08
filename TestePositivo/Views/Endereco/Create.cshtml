@@ -1,11 +1,11 @@
 ﻿@model TestePositivo.Models.EnderecoModel
 
 @{
-    ViewData["Title"] = "Criação";
+    ViewData["Title"] = "Cadastro";
 }
 
-<h1>Criação de Endereços</h1>
-<span>Lembre-se de criar o Aluno Antes</span>
+<h1>Cadastrar Endereço</h1>
+<span class="warning">Lembre-se de criar o Aluno Antes</span>
 
 <hr />
 <div class="row">
@@ -45,19 +45,19 @@
                 </select>
                 <span asp-validation-for="AlunoModelId" class="text-danger"></span>
             </div>
-
-
-
+            </br>
              
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
+            
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Voltar para a lista</a>
+<div class="btnBack">
+    
+    <a class="btn btn-secondary" asp-action="Index">Voltar para a lista</a>
 </div>
 
 @section Scripts {

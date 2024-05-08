@@ -1,12 +1,12 @@
 ﻿@model TestePositivo.Models.AlunoModel
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Cadastro";
 }
 
-<h1>Create</h1>
+<h1>Cadastrar Aluno</h1>
 
-<h4>AlunoModel</h4>
+
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -22,16 +22,6 @@
                 <input asp-for="DataNascimento" class="form-control" />
                 <span asp-validation-for="DataNascimento" class="text-danger"></span>
             </div>
-            @* <div class="form-group">
-                <label asp-for="Serie" class="control-label"></label>
-                <input asp-for="Serie" class="form-control" />
-                <span asp-validation-for="Serie" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Segmento" class="control-label"></label>
-                <input asp-for="Segmento" class="form-control" />
-                <span asp-validation-for="Segmento" class="text-danger"></span>
-            </div> *@
             <div class="form-group">
                 <label asp-for="NomePai" class="control-label">Nome do Pai</label>
                 <input asp-for="NomePai" class="form-control" />
@@ -42,7 +32,7 @@
                 <input asp-for="NomeMae" class="form-control" />
                 <span asp-validation-for="NomeMae" class="text-danger"></span>
             </div>
-
+            </br>
 
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
@@ -51,8 +41,8 @@
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
+<div class="btnBack">
+    <a class="btn btn-secondary" asp-action="Index">Voltar para lista</a>
 </div>
 
 @section Scripts {

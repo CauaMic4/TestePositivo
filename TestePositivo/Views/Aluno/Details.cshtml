@@ -1,13 +1,12 @@
 ﻿@model TestePositivo.Models.AlunoModel
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Detalhes Aluno";
 }
 
-<h1>Details</h1>
+<h1>Detalhes</h1>
 
 <div>
-    <h4>AlunoModel</h4>
     <hr />
     <dl class="row">
         <dt class="col-sm-2">
@@ -49,6 +48,6 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a class="btn btn-success" asp-action="Edit" asp-route-id="@Model?.Id">Editar</a> 
+    <a class="btn btn-secondary" asp-action="Index">Voltar para lista</a>
 </div>
