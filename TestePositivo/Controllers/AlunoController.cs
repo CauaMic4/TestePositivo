@@ -33,22 +33,22 @@ namespace TestePositivo.Controllers
 
             if (age >= 3 && age <= 5)
             {
-                serie = $"G{age - 2}";
+                serie = $"G1 a G3";
                 segmento = "Infantil";
             }
             else if (age >= 6 && age <= 10)
             {
-                serie = $"{age - 5}º ano";
+                serie = $"1° ao 5º ano";
                 segmento = "Anos iniciais";
             }
             else if (age >= 11 && age <= 14)
             {
-                serie = $"{age - 5}º ano";
+                serie = $"6° ao 9º ano";
                 segmento = "Anos finais";
             }
             else if (age >= 15 && age <= 17)
             {
-                serie = $"{age - 14}º ano ensino médio";
+                serie = $"1º ao 3° ano ensino médio";
                 segmento = "Ensino Médio";
             }
 
@@ -141,7 +141,8 @@ namespace TestePositivo.Controllers
             {
                 return NotFound();
             }
-
+            ModelState.Remove("Serie");
+            ModelState.Remove("Segmento");
             if (ModelState.IsValid)
             {
                 var age = CalculateAge(alunoModel.DataNascimento);
